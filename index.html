@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Mengirim Pesan WA Tanpa Save Nomor" />
+    <meta name="keywords" content="WA, Pesan, Message, Tanpa Save Nomor" />
+    <meta name="author" content="Fredy Nur Apriyanto" />
+    <title>WAKula</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://web.whatsapp.com/img/favicon/1x/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .jumbotron-fluid {
+        background-color: #53bca6;
+        color: #fff;
+      }
+      @media (min-width: 576px) {
+        .jumbotron {
+          padding: 2rem 1rem;
+        }
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .footer {
+        color: #777;
+        margin-top: 50px;
+      }
+      .card-body {
+        padding: 50px;
+      }
+      form {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="80%"
+              viewBox="0 0 39 39"
+            >
+              <path
+                fill="#00E676"
+                d="M10.7 32.8l.6.3c2.5 1.5 5.3 2.2 8.1 2.2 8.8 0 16-7.2 16-16 0-4.2-1.7-8.3-4.7-11.3s-7-4.7-11.3-4.7c-8.8 0-16 7.2-15.9 16.1 0 3 .9 5.9 2.4 8.4l.4.6-1.6 5.9 6-1.5z"
+              ></path>
+              <path
+                fill="#FFF"
+                d="M32.4 6.4C29 2.9 24.3 1 19.5 1 9.3 1 1.1 9.3 1.2 19.4c0 3.2.9 6.3 2.4 9.1L1 38l9.7-2.5c2.7 1.5 5.7 2.2 8.7 2.2 10.1 0 18.3-8.3 18.3-18.4 0-4.9-1.9-9.5-5.3-12.9zM19.5 34.6c-2.7 0-5.4-.7-7.7-2.1l-.6-.3-5.8 1.5L6.9 28l-.4-.6c-4.4-7.1-2.3-16.5 4.9-20.9s16.5-2.3 20.9 4.9 2.3 16.5-4.9 20.9c-2.3 1.5-5.1 2.3-7.9 2.3zm8.8-11.1l-1.1-.5s-1.6-.7-2.6-1.2c-.1 0-.2-.1-.3-.1-.3 0-.5.1-.7.2 0 0-.1.1-1.5 1.7-.1.2-.3.3-.5.3h-.1c-.1 0-.3-.1-.4-.2l-.5-.2c-1.1-.5-2.1-1.1-2.9-1.9-.2-.2-.5-.4-.7-.6-.7-.7-1.4-1.5-1.9-2.4l-.1-.2c-.1-.1-.1-.2-.2-.4 0-.2 0-.4.1-.5 0 0 .4-.5.7-.8.2-.2.3-.5.5-.7.2-.3.3-.7.2-1-.1-.5-1.3-3.2-1.6-3.8-.2-.3-.4-.4-.7-.5h-1.1c-.2 0-.4.1-.6.1l-.1.1c-.2.1-.4.3-.6.4-.2.2-.3.4-.5.6-.7.9-1.1 2-1.1 3.1 0 .8.2 1.6.5 2.3l.1.3c.9 1.9 2.1 3.6 3.7 5.1l.4.4c.3.3.6.5.8.8 2.1 1.8 4.5 3.1 7.2 3.8.3.1.7.1 1 .2h1c.5 0 1.1-.2 1.5-.4.3-.2.5-.2.7-.4l.2-.2c.2-.2.4-.3.6-.5s.4-.4.5-.6c.2-.4.3-.9.4-1.4v-.7s-.1-.1-.3-.2z"
+              ></path>
+            </svg>
+          </div>
+          <div class="col-sm-10">
+            <h1 class="display-4">WAKula</h1>
+            <p class="lead">
+              Memudahkan mengirim pesan WA tanpa menyimpan nomor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="col-sm-10 offset-sm-1">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="text-center">Kirim WA</h3>
+              <form>
+                <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Nomor WhatsApp</label>
+                  <div class="col-sm-8">
+                    <input
+                      id="phone"
+                      type="text"
+                      class="form-control"
+                      placeholder="contoh : 8912345678 (tanpa 0 atau kode negara)"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-4 col-form-label">Pesan</label>
+                  <div class="col-sm-8">
+                    <textarea
+                      id="message"
+                      class="form-control"
+                      placeholder="Masukan pesan ..."
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-4"></div>
+                  <div class="col-sm-8">
+                    <button
+                      type="button"
+                      onclick="reset()"
+                      class="btn btn-danger"
+                    >
+                      Reset
+                    </button>
+                    <button
+                      onclick="sendMessage()"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      Kirim
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <p class="footer text-center">
+          Copyright &copy; 2019 by
+          <a href="https://fredynurapriyanto.com" target="_blank"
+            ><b>Fredy Nur Apriyanto</b></a
+          >, All Right Reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    function validatePhone(txtPhone) {
+      let filter = /^([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})/;
+      if (filter.test(txtPhone)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+    function sendMessage() {
+      let phone = $("#phone").val();
+      let validate = validatePhone(phone);
+      if (validate) {
+        let url = "https://wa.me/";
+        let message = $("#message").val();
+        let url_send = url + "62" + phone + "?text=" + message;
+        window.open(url_send, "_blank");
+
+        return;
+      }
+
+      alert("Format nomor tidak sesuai");
+      return;
+    }
+
+    function reset() {
+      $("#phone").val("");
+      $("#message").val("");
+    }
+  </script>
+</html>
